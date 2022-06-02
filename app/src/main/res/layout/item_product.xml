@@ -30,12 +30,12 @@
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/imageexample"
+        android:src="@drawable/gomezbeztla2"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewLocation"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imageexample"
-        tools:srcCompat="@drawable/imageexample" />
+        app:srcCompat="@drawable/gomezbeztla2"
+        tools:srcCompat="@drawable/gomezbeztla2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

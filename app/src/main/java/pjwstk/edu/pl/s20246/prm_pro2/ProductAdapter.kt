@@ -1,5 +1,6 @@
 package pjwstk.edu.pl.s20246.prm_pro2
 
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_product.view.*
+import java.io.File
+
 
 class ProductAdapter(private val products: MutableList<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
@@ -40,7 +43,10 @@ class ProductAdapter(private val products: MutableList<Product>) : RecyclerView.
             textViewName.text = currProduct.name
             textViewLocation.text = currProduct.location
             //??
-            image.setImageResource(currProduct.drawableResourceId)
+            val imgFile = File("/storage/emulated/0/20210319_124439.jpg")
+           // image.setImageURI("/storage/emulated/0/20210319_124439.jpg")
+            val myBitmap = BitmapFactory.decodeFile(imgFile.absolutePath)
+            image.setImageBitmap(myBitmap)
         }
     }
 
